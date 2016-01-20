@@ -21,4 +21,3 @@ CMD ["/usr/sbin/apache2","-D","FOREGROUND"]
 
 # Expor a porta 80 para o mundo externo
 EXPOSE 80
-
