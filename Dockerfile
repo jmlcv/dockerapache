@@ -4,10 +4,10 @@ FROM ubuntu:14.04
 # Mantenedor do Container
 MAINTAINER Jose Valente <jmlcv@yahoo.com>
 
-RUN apt-get update && \
-    apt-get install -qy apache2 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    apache2 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Criar diretorio de 'lock' e ajustar o dono
 RUN mkdir -pv /run/lock/apache2 && chown www-data /run/lock/apache2
