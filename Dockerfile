@@ -1,5 +1,5 @@
-# Vamos usar o Ubuntu 14.04 como S.O. base
-FROM ubuntu:14.04
+# Vamos usar o Ubuntu 16.04 como S.O. base
+FROM ubuntu:16.04
 
 # Mantenedor do Container
 MAINTAINER Jose Valente <jmlcv@yahoo.com>
